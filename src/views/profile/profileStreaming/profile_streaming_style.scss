@@ -1,0 +1,70 @@
+
+
+
+#streaming .card, #streaming .border{
+    background-color: #252331 !important;
+    border: none !important
+}
+
+#streaming h3{
+    color: #fff;
+    font-weight: 700;
+    margin: 20px 0;
+    text-align: left;
+}
+
+#streaming h5{
+    color: #6b54b6;
+    font-weight: 700;
+    margin: 20px 0;
+    text-align: left;
+}
+
+
+#streaming .card-body{
+    padding: 0;
+    margin-top: 10px;
+}
+
+#streaming table td ul{
+    list-style: none;
+    padding: 0 !important;
+    text-align: left;
+}
+
+#streaming table td:first-child {
+    display: table-header-group;
+}
+
+#streaming table td:nth-child(2) {
+    padding-left: 10px;
+}
+
+
+#streaming table td ul li:first-child{
+    font-size: 18px;
+    text-align: left;
+    max-width: 23ch;
+    white-space: nowrap;
+    overflow: hidden !important;
+    text-overflow: ellipsis;
+    font-weight: bold;
+}
+
+#streaming table td ul li:nth-child(2){
+    font-size: 16px;
+    color: #a6a5a9;
+    font-weight: 600;
+}
+
+#streaming table td ul li:nth-child(3) span:first-child{
+    float: left;
+}
+
+#streaming table td ul li:nth-child(3) span:nth-child(2){
+    float: right;
+}
+
+#streaming .carousel-indicators{
+    bottom: -50px;
+}

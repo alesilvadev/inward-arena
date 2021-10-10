@@ -1,0 +1,243 @@
+@media only screen and (min-width: 1367px) {
+  .edgtf-grid-1200 .edgtf-container-inner,
+  .edgtf-grid-1200 .edgtf-grid,
+  .edgtf-grid-1200 .edgtf-row-grid-section {
+    width: 1200px;
+  }
+}
+
+.edgtf-title-holder .edgtf-title-inner {
+    position: relative;
+    display: table-cell;
+    height: 100%;
+    width: 100%;
+    vertical-align: middle;
+    padding: 70px;
+}
+
+.edgtf-title-holder {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    vertical-align: middle;
+    height: 240px;
+    background-color: #6b54b6;
+    background-position: center 0;
+    background-repeat: no-repeat;
+    box-shadow: 0 10px 27px 0 rgba(14,8,18,.5);
+    z-index: 101;
+    height: 240px;
+    background-color: #120b18;
+    z-index: 1;
+}
+
+.edgtf-title-holder.edgtf-standard-with-breadcrumbs-type .edgtf-title-info {
+    position: relative;
+    display: table-cell;
+    vertical-align: middle;
+    padding-left: 39px;
+  }
+
+.edgtf-title-holder.edgtf-standard-with-breadcrumbs-type .edgtf-breadcrumbs {
+    margin-bottom: 13px;
+    color: #fff;
+    text-align: left;
+}
+
+.edgtf-title-holder.edgtf-standard-with-breadcrumbs-type .edgtf-breadcrumbs a, .edgtf-title-holder.edgtf-standard-with-breadcrumbs-type .edgtf-breadcrumbs span {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    font-family: Rajdhani,sans-serif, 'Segoe UI', 'Roboto', 'Oxygen';
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 1.43em;
+    font-weight: 600;
+    letter-spacing: .1em;
+    color: inherit;
+}
+
+.edgtf-grid {
+    margin: 0 auto;
+    width: 100%;
+}
+
+.edgtf-title-holder.edgtf-title-with-separator .edgtf-title-info:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 6px;
+    height: 90%;
+    background-color: #6b54b6;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+
+.edgtf-title-holder h2 {
+    font-size: 60px;
+    font-weight: 700;
+}
+
+#postGame{
+    margin-top: 100px;
+}
+
+#postGame img{
+    max-width: 100%;
+}
+
+#postGame .game-description{
+    text-align: left;
+}
+
+#postGame .game-description h3{
+    margin: 28px 0 10px;
+    position: relative;
+    padding-left: 20px;
+    font-size: 35px;
+    font-weight: 700;
+}
+
+#postGame .game-description p{
+    margin: 28px 0 10px;
+    position: relative;
+    padding-left: 20px;
+    font-size: 15px !important;
+    font-family: sans-serif, 'Segoe UI', 'Roboto', 'Oxygen';
+}
+
+
+
+#postGame .edgtf-author-info-widget {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    vertical-align: middle;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    background-color: #22152c;
+    -webkit-box-shadow: 0 10px 27px 0 rgba(14,8,18,.5);
+    box-shadow: 0 10px 27px 0 rgba(14,8,18,.5);
+    text-align: left;
+}
+
+.edgtf-author-info-widget .edgtf-author-info-additional {
+    padding: 23px 25px 38px;
+}
+
+.edgtf-author-info-widget .edgtf-aiw-title {
+    margin: 28px 0 10px;
+    position: relative;
+    padding-left: 20px;
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.game-description h5{
+    margin: 28px 0 10px;
+    position: relative;
+    padding-left: 20px;
+    font-size: 20px;
+    color: #6b54b6;
+}
+
+.edgtf-author-info-widget p{
+    font-family: "Open Sans",sans-serif, 'Segoe UI', 'Roboto', 'Oxygen';
+    font-size: 15px !important;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.edgtf-author-info-widget .edgtf-aiw-title:before {
+    position: absolute;
+    top: 5px;
+    left: 0;
+    display: block;
+    content: '';
+    height: calc(100% - 11px);
+    width: 3px;
+    background-color: #6b54b6;
+}
+
+.game-social-sync {
+    float: right;
+}
+
+.game-genre{
+    padding-top: 15px;
+    padding-left: 20px;
+    float: left;
+}
+
+
+.game-genre span{
+    color: #6b54b6
+}
+
+.overlap-rounded-circle {
+    margin-right: 9px;
+    padding-left: 9px;
+}
+
+.overlap-rounded-circle .rounded-circle {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #fff;
+    margin: 0 0 0 -9px;
+}
+
+.shadow-sm {
+    box-shadow: 0 6px 22px 0 rgba(0,0,0,0.08) !important;
+}
+.shadow-sm {
+    box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)!important;
+}
+.rounded-circle {
+    border-radius: 50%!important;
+}
+
+.edgtf-title-holder{
+    margin-top: -10px;
+}
+
+#postGame .games-suggested{
+    text-align: left;
+    margin: 20px 0;
+}
+
+#postGame .games-suggested h3{
+    margin: 28px 0 10px;
+    position: relative;
+    padding-left: 20px;
+    font-size: 35px;
+    font-weight: 700;
+}
+
+#postGame .games-suggested p{
+    margin: 28px 0 10px;
+    position: relative;
+    padding-left: 20px;
+    font-size: 15px !important;
+    font-family: sans-serif, 'Segoe UI', 'Roboto', 'Oxygen';
+}
+
+
+#postGame .games-suggested h3:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 6px;
+    height: 90%;
+    background-color: #6b54b6;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.games-suggested img{
+    margin: 20px 0;
+}

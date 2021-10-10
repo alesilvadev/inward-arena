@@ -1,0 +1,464 @@
+@import './../../../utils/styles.scss';
+
+#profileGames .profile-game-image{
+    max-width: 124px !important;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+#profileGames .profile-game-image-box{
+    max-width: 100px !important;
+    margin-top: -20px;
+}
+
+#profileGames .main-data{
+    display: inline-flex;
+}
+
+#gameLol .box{
+    margin-top: 0px;
+    background-color: $gamer-box-background !important;
+    -webkit-appearance: none;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: .3s cubic-bezier(.21,.04,0,1.07);
+    -o-transition: .3s cubic-bezier(.21,.04,0,1.07);
+    transition: .3s cubic-bezier(.21,.04,0,1.07);
+    border-bottom: 2px solid #3f3c4c82;
+
+}
+
+#gameLol .nav-item a{
+    color: #fff;
+}
+
+//MATCH INFORMATION
+#gameLol .match-information{
+    background-color: #3f3b4f;
+    padding: 20px;
+    display: inline-flex;
+}
+
+#gameLol .match-time-information{
+    text-align: left;
+    display: grid;
+}
+
+#gameLol .match-information .main-player{
+    max-width: 70px;
+    max-height: 70px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+#gameLol .match-information .icon-data{
+    max-width: 25px;
+    max-height: 25px;
+    padding: 5px;
+}
+
+#gameLol .match-information .skills{
+    margin-top: 35px;
+    margin-left: 10px;
+}
+
+#gameLol .match-information .score{
+    margin-top: 50px;
+    margin-left: 20px;
+}
+
+#profileGames .border, #profileGames .card {
+    border: 1px solid #282534 !important;
+    background-color: #282534;
+    padding: 10px;
+    width: 115px;
+    height: 115px;
+}
+
+#profileGames .active{
+    border-bottom: 2px solid #6b54b6;
+
+}
+
+////////////////////////////////
+
+.general-info-box{
+    background-color: #282534;
+    border-bottom: 2px solid #343140;
+    padding: 10px;
+}
+
+.general-info{
+    text-align: left;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+
+.rad-info-box{	
+    width: 170px;   
+	margin-bottom:16px;
+	padding:20px;
+}
+
+.rad-info-box i{
+	display:block;
+	background-clip:padding-box;
+	margin-right:15px;
+	height:60px;
+	width:60px;
+	border-radius:100%;
+	line-height:60px;
+	text-align:center;
+	font-size:4.4em;
+	position:absolute;	
+}
+
+.rad-info-box .value,
+.rad-info-box .heading{
+	display:block;	
+	position:relative;
+	color: #fff;
+	text-align:right;
+	z-index:10;
+}
+
+.rad-info-box .heading{
+	font-size:1.2em;
+	font-weight:300;
+	text-transform:uppercase;
+}
+
+.rad-info-box .value{
+	font-size:2.1em;
+	font-weight:600;
+	margin-top:5px;
+}
+
+.rad-panel-action {
+    list-style: none;
+    display: inline-block;
+    float: right;
+  }
+  
+  .rad-panel-action li {
+    display: inline-block;
+    color: #fff;
+    margin: 0 5px;
+    cursor: pointer;
+  }
+
+  .rad-list-group-item{
+	margin:5px 10px 25px 5px;	
+	
+	&:after{
+		content:"";
+		display:table;
+	}
+}
+
+.rad-chat{
+	border:1px solid rgba(#c6c6c6,.5);
+	padding:0 10px;
+	border-radius:2px;
+	position:relative;	
+}
+
+.rad-chat-body{
+	position:relative;
+}
+
+.rad-list-group-item.left{
+	.rad-chat{
+		margin-left:50px;
+		.sm-text{
+			float:right;
+		}
+		
+		&:after{
+			content:"";
+			border-top:1px solid rgba(#c6c6c6,.5);
+			border-left:1px solid rgba(#c6c6c6,.5);
+			height:10px;
+			width:10px;
+			background:#fff;
+			position:absolute;
+			left:-6px;
+			top:10px;
+			transform:rotate(-45deg);
+		}
+	}
+}
+
+.rad-chat-msg {
+	font-size:14px;
+	color:#585f69;
+}
+
+.rad-list-group-item.right{
+	.rad-chat{
+		margin-right:50px;		
+		.lg-text{
+			float:right;
+		}
+		
+		&:after{
+			content:"";
+			border-top:1px solid rgba(#c6c6c6,.5);
+			border-right:1px solid rgba(#c6c6c6,.5);
+			height:10px;
+			width:10px;
+			background:#fff;
+			position:absolute;
+			right:-6px;
+			top:10px;
+			transform:rotate(45deg);
+		}
+	}
+}
+
+.rad-list-icon{
+	position:relative;
+	height:40px;
+	width:40px;
+	border-radius:100%;
+	line-height:40px;
+	text-align:center;
+	color: white;	
+	top:-5px;
+}
+
+.icon-shadow{
+	box-shadow: 0 0px 3px 1px rgba(0,0,0,.26);
+}
+
+.rad-list-img{
+	border-radius:100%;
+	width:32px;
+	height:32px;
+}
+
+.rad-list-group{
+	position:relative;
+}
+
+.rad-list-group.group{
+	&:before{
+		content:"";
+		position:absolute;				
+		background:rgba(#c6c6c6,.3);
+		top:-20px;
+		bottom:-20px;
+		left:25px;
+		width:1px;
+	}
+}
+
+.rad-list-content{	
+	line-height:1.3;
+	margin-left:50px;
+}
+
+#profileGames .table td, #profileGames .table th{
+    border-top: none !important;
+}
+
+#profileGames .table thead th {
+    border-bottom: 2px solid #3e3a4d;
+}
+
+.flex-wrapper {
+    display: flex;
+    flex-flow: row nowrap;
+  }
+  
+  .single-chart {
+    width: 33%;
+    justify-content: space-around ;
+  }
+  
+  .circular-chart {
+    display: block;
+    margin: 10px auto;
+    max-width: 80%;
+    max-height: 250px;
+  }
+  
+  .circle-bg {
+    fill: none;
+    stroke: #4d495d;
+    stroke-width: 3.8;
+  }
+  
+  .circle {
+    fill: none;
+    stroke-width: 2.8;
+    stroke-linecap: round;
+    animation: progress 1s ease-out forwards;
+  }
+  
+  @keyframes progress {
+    0% {
+      stroke-dasharray: 0 100;
+    }
+  }
+  
+  .circular-chart.orange .circle {
+    stroke: #ff9f00;
+  }
+  
+  .circular-chart.green .circle {
+    stroke: #4CC790;
+  }
+  
+  .circular-chart.blue .circle {
+    stroke: #3c9ee5;
+  }
+
+  .circular-chart.red .circle {
+    stroke: #d13939;
+  }
+  
+  .percentage {
+    fill: #666;
+    font-family: sans-serif;
+    font-size: 0.5em;
+    text-anchor: middle;
+  }
+
+  #gameLol main p{
+    color: #aaaaaa !important;
+  }
+
+  #gameLol .champions-icon{
+    max-width: 38px;
+    border-radius: 100%;
+  }
+
+  .lol-match-info{
+    background-color: #282534 !important;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-bottom: 2px solid #3f3c4c82;
+  }
+
+  .lol-match-info .user-img-summoner{
+      max-width: 100px;
+  }
+
+  table td:first-child{
+    padding-left: 10px;
+}
+
+table td:last-child{
+    padding-right: 20px;
+}
+
+.lol-match-info .user-power-summoner{
+    display: grid;
+    margin-top: 18px;
+    margin-left: 5px;
+}
+
+.lol-match-info tr:first-child{
+    background-color: #211e2b;
+}
+
+.lol-match-info th:nth-last-child(4){
+    font-weight: 300;
+}
+
+.lol-match-info th:nth-last-child(5){
+    font-weight: 300;
+}
+
+.lol-match-info th:last-child{
+    color: #ff5454;
+    font-weight: 300;
+}
+
+.lol-match-info th{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+.lol-match-info .user-power-summoner img{
+    max-width: 37px;
+    margin-bottom: 10px;
+}
+
+.lol-match-info .match-stats{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.lol-match-info ul {
+    list-style-type: none;
+    text-align: left;
+    margin-left: 0 !important;
+    padding-left: 10px;
+    padding-top: 10px; 
+}
+
+.lol-match-info .match-kda{
+    font-size: 16px;
+}
+
+.lol-match-info .match-kill{
+    color: #c6a22c;
+    font-weight: 900;
+}
+
+.lol-match-info .match-items{
+    max-width: 32px;
+}
+
+.button-see-more{
+    margin-top: 20px;
+    color: #9079da !important;
+    font-weight: 800;
+    font-size: initial;
+    cursor: pointer;
+}
+
+.friends-played td:first-child{
+    display: inline-flex;
+}
+
+.friends-played img{
+    margin-right: 5px;
+    max-width: 20px;
+}
+
+.friends-played tr{
+    text-align: left;
+}
+
+.box-live{
+    margin-top: 0px;
+    background-color: #4c8044 !important;
+    -webkit-appearance: none;
+    box-sizing: border-box;
+    transition: 0.3s cubic-bezier(0.21, 0.04, 0, 1.07);
+    border-bottom: 2px solid #3f3c4c82;
+}
+
+.box-live h6{
+    color: #fff;
+    font-weight: 700;
+}
+
+.lol-general-info{
+    width: 100%;
+}
+
+.lol-general-info td:first-child{
+    text-align: left;
+}
+
+.lol-general-info td:nth-child(2){
+    font-weight: 800;
+}

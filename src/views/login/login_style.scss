@@ -1,0 +1,624 @@
+/*GLOBAL*/
+p {
+  font-size: 0.7em;
+}
+
+/*VIDEO*/
+video.fullscreen {
+  z-index: 999;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  transform: translate(-50%, -50%);
+}
+
+.video-front {
+  position: fixed;
+  z-index: -1;
+  background-color: rgba(30, 33, 70, 0.95);
+  opacity: 1;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin-left: -15px;
+
+}
+
+#videoBG {
+  z-index: -1;
+  opacity: 0.2;
+}
+
+@media (min-aspect-ratio: 16/9) {
+  #videoBG {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-aspect-ratio: 16/9) {
+  #videoBG {
+    width: auto;
+    height: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  #videoBG {
+    display: none;
+  }
+
+  .authfy-login .social-buttons a {
+    margin-top: 10px !important;
+  }
+
+  .authfy-login {
+    position: sticky !important;
+  }
+
+  .authfy-panel {
+    position: sticky !important;
+  }
+
+  .brand-logo{
+    margin: 10px auto !important;
+  }
+
+  h3 {
+    font-size: 1.5rem !important;
+}
+
+}
+
+
+
+
+/*LOGIN*/
+.authfy-login .loginOr .spanOr {
+  width: 100%;
+  display: block;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.authfy-login .loginOr {
+  position: relative;
+  font-size: 1em;
+  color: #aaa;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  padding-top: .1em;
+  padding-bottom: .1em;
+}
+
+.authfy-login .loginOr .spanOr:after,
+.authfy-login .loginOr .spanOr:before {
+  content: "";
+  background-color: #ddd;
+  width: 55%;
+  height: 1px;
+  position: absolute;
+  top: 19px;
+}
+
+.authfy-login .loginOr .spanOr:before {
+  left: -50px;
+}
+
+.authfy-login .loginOr .spanOr:after {
+  right: -50px;
+}
+
+.authfy-login .loginOr .spanOr:after,
+.authfy-login .loginOr .spanOr:before {
+  content: "";
+  background-color: #ddd;
+  width: 55%;
+  height: 1px;
+  position: absolute;
+  top: 19px;
+}
+
+.authfy-login .auth-title {
+  font-weight: 700;
+  margin-top: 0;
+}
+
+.brand-logo {
+  margin: 35px auto;
+
+}
+
+.main-home {
+  font-size: 1.6em;
+  font-weight: 400;
+  color: #44525f;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 100%;
+}
+
+.authfy-panel-right {
+  background-color: rgba(45, 56, 94, .5);
+  color: #fff;
+  height: 100vh;
+
+}
+
+.authfy-panel-left {
+  background-color: #fff;
+}
+
+.authfy-panel-right .hero-heading .headline {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.authfy-panel-right .hero-heading .headline h1,
+.authfy-panel-right .hero-heading .headline h2,
+.authfy-panel-right .hero-heading .headline h3 {
+  color: #fff;
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.authfy-panel-right .hero-heading {
+  display: table;
+  height: 100vh;
+  width: 100%;
+  text-align: center;
+}
+
+.panel-forgot .form-control,
+.panel-login .form-control,
+.panel-signup .form-control {
+  color: #333;
+  font-size: 16px;
+  height: 50px;
+  padding: 12px 0;
+  outline: 0;
+  border: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.wrap-input {
+  width: 100%;
+  position: relative;
+  border-bottom: 2px solid #d9d9d9;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+form {
+  display: block;
+  margin-top: 0em;
+}
+
+.authfy-login {
+  min-height: 610px;
+  position: relative;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  padding-bottom: 30px;
+  background-color: #fff !important;
+}
+
+.authfy-login .authfy-panel.active {
+  opacity: 1;
+  transform: translateX(0);
+  -webkit-transform: translateX(0);
+}
+
+.authfy-panel {
+  padding: 0 40px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: all .5s ease;
+  opacity: 0;
+  transform: translateX(-100%);
+  -webkit-transform: translateX(-100%);
+}
+
+.authfy-login .social-buttons .btn-facebook {
+  background: #3b5998;
+}
+
+.authfy-login .social-buttons a {
+  color: #fff;
+}
+
+.btn-block {
+  display: block;
+  width: 100%;
+}
+
+.btn-group-lg>.btn,
+.btn-lg {
+  padding: 10px 16px;
+  font-size: 18px;
+  line-height: 1.3333333;
+  border-radius: 6px;
+}
+
+.authfy-login .social-buttons .btn-twitter {
+  background: #00aced;
+}
+
+.authfy-login .social-buttons .btn-google {
+  background: #c32f10;
+}
+
+.panel-login .remember-row label {
+  font-weight: 400;
+  position: relative;
+  cursor: pointer;
+  color: #666;
+  font-size: 0.6em;
+}
+
+.checkbox input[type=checkbox] {
+  position: absolute;
+  opacity: 0;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.checkbox,
+.radio {
+  position: relative;
+  display: block;
+  margin-top: 2px;
+  margin-bottom: 10px;
+}
+
+.checkbox input[type=checkbox]+.label-text:before {
+  content: "";
+  background-color: #fff;
+  border: 1px solid #ced4da;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: border .15s ease-in-out, color .15s ease-in-out;
+}
+
+.checkbox input[type=checkbox]:checked+.label-text:after {
+  font-family: FontAwesome,sans-serif, 'Segoe UI', 'Roboto', 'Oxygen';
+  content: "\f00c";
+}
+
+.checkbox input[type=checkbox]+.label-text:after {
+  background-color: #4f77ff;
+  color: #fff;
+  border-radius: 2px;
+  border-color: #4f77ff;
+  line-height: 1.4;
+}
+
+.checkbox input[type=checkbox]+.label-text:after,
+.checkbox input[type=checkbox]+.label-text:before {
+  font-size: 11px;
+  display: inline-block;
+  width: 17px;
+  height: 17px;
+  padding: 2px;
+  margin-left: 0;
+  position: absolute;
+  top: 2px;
+  left: 0;
+}
+
+
+.container-checkbox {
+  text-align: left;
+}
+
+
+.container-checkbox .container {
+  width: 150px;
+}
+
+.container-checkbox label {
+  display: block;
+  font-weight: 400;
+  cursor: pointer;
+  color: #666;
+  font-size: 0.7em;
+}
+
+.container-checkbox input {
+  display: inline-block;
+  margin-left: -1em;
+}
+
+.container-checkbox input[type=checkbox],
+input[type=radio] {
+  margin-right: 3px;
+  width: 17px;
+  height: 17px;
+  padding: 2px;
+  margin-top: 3px;
+}
+
+
+.panel-forgot .form-control,
+.panel-login .form-control,
+.panel-signup .form-control {
+  color: #333;
+  font-size: 16px;
+  height: 50px;
+  padding: 12px 0;
+  outline: 0;
+  border: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  height: 34px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+  -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+  -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+  transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+
+button,
+input,
+select,
+textarea {
+  font-family: inherit,sans-serif, 'Segoe UI', 'Roboto', 'Oxygen';
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.pwdMask {
+  position: relative;
+  cursor: pointer;
+}
+
+.wrap-input {
+  width: 100%;
+  position: relative;
+  border-bottom: 2px solid #d9d9d9;
+}
+
+.focus-input {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  pointer-events: none;
+}
+
+.focus-input,
+.focus-input:before {
+  display: block;
+  position: absolute;
+  left: 0;
+}
+
+.focus-input:before {
+  background-color: #4f77ff;
+  content: "";
+  width: 0;
+  height: 2px;
+  bottom: -2px;
+  -webkit-transition: all .4s;
+  -o-transition: all .4s;
+  -moz-transition: all .4s;
+  transition: all .4s;
+}
+
+.focus-input,
+.focus-input:before {
+  display: block;
+  position: absolute;
+  left: 0;
+}
+
+.panel-login .pwdMask .pwd-toggle,
+.panel-signup .pwdMask .pwd-toggle {
+  top: 15px;
+  right: 15px;
+}
+
+.pwdMask .pwd-toggle {
+  color: #ccc;
+  position: absolute;
+  z-index: 2;
+}
+
+.fa {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.btn-primary {
+  background-color: #4f77ff;
+  border-color: #4f77ff;
+}
+
+.btn-block {
+  display: block;
+  width: 100%;
+}
+
+.focus-input:before {
+  background-color: #4f77ff;
+  content: "";
+  width: 0;
+  height: 2px;
+  bottom: -2px;
+  -webkit-transition: all .4s;
+  -o-transition: all .4s;
+  -moz-transition: all .4s;
+  transition: all .4s;
+}
+
+.focus-input,
+.focus-input:before {
+  display: block;
+  position: absolute;
+  left: 0;
+}
+
+.authfy-panel .authfy-heading {
+  margin-bottom: 30px;
+}
+
+input[type=checkbox],
+input[type=radio] {
+  margin: 4px 0 0;
+  margin-top: 1px\9;
+  line-height: normal;
+}
+
+input[type=checkbox],
+input[type=radio] {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.pwdMask .pwd-toggle.fa-eye,
+.pwdMask .pwd-toggle:focus,
+.pwdMask .pwd-toggle:hover {
+  color: #4f77ff;
+}
+
+.terms-conditions-block {
+  display: contents !important;
+}
+
+.terms-conditions-block .label-text {
+  margin-left: 0px;
+  font-size: 16px;
+  text-align: left;
+}
+
+.text-normal-size {
+  font-size: 16px;
+}
+
+.slideLeft {
+  left: -200px;
+  -webkit-animation: slide 0.5s forwards;
+  -webkit-animation-delay: 2s;
+  animation: slideLeft 0.5s forwards;
+  animation-delay: 0s;
+}
+
+@-webkit-keyframes slideLeft {
+  100% {
+    left: 0;
+  }
+}
+
+@keyframes slideLeft {
+  100% {
+    left: 0;
+  }
+}
+
+.slideRigth {
+  -webkit-animation: slide 0.5s forwards;
+  -webkit-animation-delay: 2s;
+  animation: slideRigth 0.5s forwards;
+  animation-delay: 0s;
+}
+
+@-webkit-keyframes slideRigth {
+  100% {
+    left: -200;
+  }
+}
+
+@keyframes slideRigth {
+  100% {
+    left: -200;
+  }
+}
+
+.link-go-to {
+  color: #337ab7;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.link-go-to:hover {
+  text-decoration: underline;
+}
+
+.btn-primary:hover {
+  background: red;
+}
+
+
+.main-home .btn-action {
+  background-color: #3B6EF1;
+  color: #fff;
+  border: 1px solid #1E58C8;
+}
+
+.hero-heading h6{
+  font-size: 18px;
+    margin-top: 15px;
+    font-weight: 700;
+}
+
+.hero-heading h6{
+  font-size: 18px;
+    margin-top: 15px;
+    font-weight: 700;
+}
+
+.carousel-mobile h6{
+  font-size: 18px;
+  margin-top: 15px;
+  font-weight: 700;
+  color: #072c72;
+}
+
+.carousel-mobile svg{
+  color: #072c72
+}
+
+.box-login{
+  background-color: #fff !important;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.error-text{
+  font-size: 14px !important;
+  color: red !important;
+  font-weight: 400;
+  text-align: center !important;
+}

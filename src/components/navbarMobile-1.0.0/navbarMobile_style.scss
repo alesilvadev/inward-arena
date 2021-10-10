@@ -1,0 +1,300 @@
+@import '../../utils/styles.scss';
+
+.navbar-mobile-top{
+    background-color: $gamer-navbar-background !important;
+    padding-top: 0 !important;
+    transition:top .3s;
+}
+
+.navbar-mobile-top .navbar {
+    padding: 0 0 !important;
+    width: 100%;
+    -webkit-appearance: none;
+    box-sizing: border-box;
+    filter: drop-shadow(0px 10px 8px rgba(14, 8, 18, 0.44));
+    transition: 0.3s cubic-bezier(0.21, 0.04, 0, 1.07);
+    z-index: 99;
+    line-height: calc(63px - (48px - 2px));
+    color: #c3bace;
+    background-color: $gamer-navbar-background;
+    padding-top: 0 !important;
+}
+
+.navbar-mobile-top .raf-icon-badge svg{
+    margin-bottom: 3px;
+    margin-left: 5px;
+    fill: #fff;
+}
+
+.navbar-mobile-bottom .link-profile{
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+
+.navbar-top-hide{
+    top:-100px
+}
+
+
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,500,500i,700,700i&display=swap');
+/* Top Nav */
+ .navbar-dark .navbar-nav .nav-link {
+    color: #fff !important;
+}
+ .osahan-nav-top .container {
+     padding: 0 16px;
+}
+ .osahan-nav-top .img-profile {
+     width: 30px;
+     height: 30px;
+}
+ .osahan-nav-top .osahan-list-dropdown .nav-link i {
+     font-size: 16px;
+}
+
+.dropdown-navbar{
+    background: $gamer-navbar-background !important;
+    border-color: #3e3e3e !important;
+    color: #ffffff !important;
+}
+
+ .osahan-nav-top .osahan-list-dropdown .nav-link .badge {
+     position: absolute;
+     border-radius: 50px;
+     min-width: 15px;
+     height: 15px;
+     font-size: 9px;
+     padding: 0px;
+     right: 1px;
+     line-height: 15px;
+     top: 30px;
+}
+ .osahan-nav-top .nav-link {
+     position: relative;
+     height: 90px;
+     display: flex;
+     align-items: center;
+}
+ .osahan-nav-top .navbar-search .form-control {
+    background-color: #140c1a;
+    font-family: Rajdhani,sans-serif, 'Segoe UI', 'Roboto', 'Oxygen';
+    color: #6b54b6;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: .01em;
+    font-weight: 600;
+    padding-left: 37px;
+    padding-right: 74px;
+    -webkit-clip-path: polygon(6% 0,100% 0,100% 100%,0 100%,0 32%);
+    clip-path: polygon(6% 0,100% 0,100% 100%,0 100%,0 32%);
+}
+ .osahan-nav-top .navbar-search .btn {
+    background-color: #140c1a;
+    color: #6b54b6;
+}
+ .dropdown-list .dropdown-item {
+     white-space: normal;
+     padding-top: .5rem;
+     padding-bottom: .5rem;
+     border-left: 1px solid #e3e6f0;
+     border-right: 1px solid #e3e6f0;
+     border-bottom: 1px solid #e3e6f0;
+     line-height: 1.3rem;
+     
+}
+ .dropdown-list {
+     padding: 0;
+     border: none;
+     overflow: hidden;
+     width: 20rem!important;
+}
+ .dropdown-list .dropdown-header {
+     background-color: #161616 !important;
+     border: 1px solid #3e3e3e !important;
+     color: #fff;
+     font-weight: 800;
+     font-size: 14px;
+     padding: .8rem 1rem;
+}
+ .dropdown-list .icon-circle {
+     height: 2.5rem;
+     width: 2.5rem;
+     border-radius: 100%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}
+/* End Top Nav */
+
+/* Mobile Media */
+@media (max-width: 998px) {
+	.osahan-nav-top .dropdown-menu {
+        width: 100% !important;
+        height: 110px !important
+	}
+	.osahan-nav-top .nav-item.dropdown {
+		position: unset;
+	}
+	.osahan-line-tab .nav-link {
+		font-size: 13px;
+	}
+	.job-tags .btn {
+		margin: 3px 1px !important;
+	}
+	.profile-right {
+		display: inline-grid;
+	}
+	.profile-right .btn {
+		margin: 2px 0 !important;
+    }
+    
+    .input-group>.custom-file, .input-group>.custom-select, .input-group>.form-control, .input-group>.form-control-plaintext {
+        position: static !important;
+    }
+}
+/* End Mobile Media */
+
+.navbar-icon{
+    max-width: 40px;
+    margin-right: 5px;
+    padding-top: 5px;
+    margin-left: 10px;
+}
+
+::-webkit-input-placeholder {
+    color: peachpuff;
+    font-size: 14px;
+  }
+  ::-moz-placeholder {
+    color: peachpuff;
+    font-size: 14px;
+  }
+  :-ms-input-placeholder {
+    color: peachpuff;
+    font-size: 14px;
+  }
+  ::placeholder {
+    color: peachpuff;
+    font-size: 14px;
+  }
+  
+  .nav-link span {
+      margin-left: 5px;
+  }
+
+ .navbar-mobile-bottom .box-image-rounded-small img{
+    object-fit: cover;
+    width:30px;
+    height:30px;
+    margin-bottom: 0px;
+}
+
+.drop-down-profile:hover .dropdown-menu{
+    height: 200px;
+    opacity: 1;
+    transform: translateY(0);
+    visibility: visible !important;
+    display: block !important;
+    background-color: red;
+}
+
+.icon-country-flags{
+    max-width: 20px;
+    margin-right: 5px;
+    margin-top: -3px;
+}
+
+.osahan-list-dropdown{
+    padding-top: 5px;
+}
+
+.navbar-mobile-bottom nav{
+    -webkit-appearance: none;
+    box-sizing: border-box;
+    filter: drop-shadow(0 3px 7px rgba(14, 8, 18, 0.44));
+    transition: 0.3s cubic-bezier(0.21, 0.04, 0, 1.07);
+    z-index: 99;
+    line-height: calc(63px - (48px - 2px));
+    color: #c3bace;
+    background-color: $gamer-navbar-background;
+    height: 70px;
+}
+
+.nav-mobile-bottom{
+    display: contents;
+    list-style-type: none;
+}
+
+.nav-mobile-bottom svg {
+    color: #fff !important;
+    margin: 0 7px;
+}
+
+.notification-mobile {
+    div:nth-child(1) {
+        div:nth-child(2) {
+        left: -200px !important;
+        }
+    }
+    
+    .raf-dropdown-panel--arrow::after{
+        left: 214px !important;
+    }
+}
+
+.nav-mobile-bottom span {
+    color: #8c8c8c !important;
+}
+
+.nav-mobile-bottom .nav-link{
+    display: table-caption !important;
+}
+
+.navbar{
+    justify-content: center !important;
+    padding: 0 !important;
+}
+
+.navbar-mobile-top .navbar-brand{
+    padding-left: 10px;
+}
+
+.navbar-mobile-top .navbar-nav{
+    padding-right: 30px;
+}
+
+.navbar-mobile-top .img-profile {
+    width: 40px !important;
+    height: 40px !important;
+}
+
+
+#youritem .fade.in {
+    animation-name: fadeIn;
+}
+
+#youritem .fade.out {
+    animation-name: fadeOut;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(startYposition);
+    } 
+    100% {
+        opacity: 1;
+        transform: translateY(endYposition);
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+        transform: translateY(startYposition);
+    } 
+    100% {
+        opacity: 0;
+        transform: translateY(endYposition);
+    }
+}

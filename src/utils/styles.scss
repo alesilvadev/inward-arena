@@ -1,0 +1,53 @@
+//Light-theme
+$light-background: #edf2f6;
+$light-component: #ffffff;
+$ligth-border: #dee2e6;
+
+//dark-theme
+$dark-background: #161616;
+$dark-component: #282828;
+$dark-border: #3e3e3e;
+
+//Gaming-theme:
+$gaming-body-background: #1b0f23;
+$gaming-box-background: #20132a;
+$gaming-navbar-background: #1c1024;
+$gaming-font-style: 'Rajdhani', sans-serif;
+
+
+//Gaming-theme-2
+$gamer-body-background: #252331;
+$gamer-box-background: #282534;
+$gamer-navbar-background: #252331;
+$gamer-icon-background: #2e2a3f;
+$gamer-form-input-background: #22172a69;
+$gamer-sidebar-label-background: #1c1526;
+
+.full-screen-container{
+    width: 100vw;
+    position: relative;
+    margin-left: -50vw;
+    left: 50%;
+}
+
+.center-items-absolute{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.title-gold {
+    font-weight: 700 !important;
+    text-transform: uppercase;
+    color: #d3ac2b !important;
+    font-size: 20px !important;
+}
+
+.match-player-img{
+    max-width: 14px;
+}
+
+.link-active {
+    border-bottom: 2px solid #6b54b6;
+}

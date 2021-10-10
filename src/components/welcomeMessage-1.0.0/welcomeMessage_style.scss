@@ -1,0 +1,50 @@
+.welcome-message img{
+    width: 100%;
+}
+
+.welcome-message h4{
+    margin-top: 55%;
+    margin-bottom: 10%;
+}
+
+.welcome-message .rodal-dialog{
+    animation-duration: 300ms;
+    background-image: url('./assets/userDefault.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size:100% 160px;
+}
+
+.welcome-message .blobs-container{
+    position: static;
+    width: auto !important;
+    display: -webkit-inline-box;
+    margin-top: 15px;
+}
+
+.welcome-message .blob{
+    cursor: pointer;
+}
+
+.blob.offline {
+	background: #66627a;
+	height: 10px;
+	width: 10px;
+}
+
+.welcome-message button{
+    color: #d31c3e;
+    font-size: 16px;
+    font-weight: 900;
+    margin-top: 12px;
+    border: 1px solid #d31c3e;
+    background-color: transparent;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.welcome-message button:hover{
+    color: #fff;
+    background-color: #d31c3e;
+}

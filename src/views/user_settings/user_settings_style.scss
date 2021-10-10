@@ -1,0 +1,423 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700');
+@import url('//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css');
+@import './../../utils/styles.scss';
+
+.sidebar-toggle {
+  margin-left: -240px;
+}
+.sidebar {
+  width: 240px;
+  height: 100%;
+  background: #293949;
+  position: absolute;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  -ms-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  z-index: 100;
+  #leftside-navigation {
+    ul, ul ul {
+      margin: -2px 0 0;
+      padding: 0;
+    }
+    ul {
+      li {
+        list-style-type: none;
+        border-bottom: 1px solid rgba(255,255,255,.05);
+        &.active {
+          & > a {
+            color: #1abc9c;
+          }
+          ul {
+            display: block;
+          }
+        }
+        a {
+          color: #aeb2b7;
+          text-decoration: none;
+          display: block;
+          padding: 18px 0 18px 25px;
+          font-size: 12px;
+          outline: 0;
+          -webkit-transition: all 200ms ease-in;
+          -moz-transition: all 200ms ease-in;
+          -o-transition: all 200ms ease-in;
+          -ms-transition: all 200ms ease-in;
+          transition: all 200ms ease-in;
+          &:hover {
+            color: #1abc9c;
+          }
+          span {
+            display: inline-block;
+          }
+          i {
+            width: 20px;
+            .fa-angle-left, .fa-angle-right {
+              padding-top: 3px;
+            }
+          }
+        }
+      }
+    }
+    ul ul {
+      display: none;
+      li {
+        background: #23313f;
+        margin-bottom: 0;
+        margin-left: 0;
+        margin-right: 0;
+        border-bottom: none;
+        a {
+          font-size: 12px;
+          padding-top: 13px;
+          padding-bottom: 13px;
+          color: #aeb2b7;
+        }
+      }
+    }
+  }
+}
+
+.user-settings-general{
+  background-color: $gamer-box-background !important;
+  width: 100%;
+  margin: 0 0 10px;
+  padding: 24px 33px;
+  font-family: inherit,sans-serif, 'Segoe UI', 'Roboto', 'Oxygen';
+  font-size: 15px;
+  font-weight: inherit;
+  line-height: calc(63px - (48px - 2px));
+  color: #c3bace;
+  border: none;
+  border-radius: 0;
+  outline: 0;
+  cursor: text;
+  -webkit-appearance: none;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-filter: drop-shadow(0 3px 7px rgba(14, 8, 18, .44));
+  filter: drop-shadow(0 3px 7px rgba(14, 8, 18, .44));
+  -webkit-transition: .3s cubic-bezier(.21,.04,0,1.07);
+  -o-transition: .3s cubic-bezier(.21,.04,0,1.07);
+  transition: .3s cubic-bezier(.21,.04,0,1.07);
+  z-index: 10;
+}
+
+.user-settings-sidebar .card{
+  background-color: #282534 !important;
+  color: #fff;
+  border: none !important;
+  margin-bottom: 5px;
+}
+
+.user-settings-sidebar .card-header {
+  padding: .25rem 1.25rem;
+}
+
+.user-settings-sidebar .card-header button{
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 21px;
+  padding: 15px 0;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: #fff;
+
+}
+
+.user-settings-general .form-control {
+    display: block;
+    width: 100%;
+    height: calc(1.5em + .75rem + 2px);
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+
+#UserSettings .user-settings-general .form-control, #UserSettings .custom-select, #UserSettings .form-control:hover,  #UserSettings .form-control:focus {
+  border-color: #ffffff0f;
+  background-color: $gamer-form-input-background;
+  color: #fff;
+}
+
+#UserSettings .user-settings-general .form-control:focus {
+    color: #fff;
+    border-color: #ffffff0f;
+    background-color: $gamer-form-input-background;
+    outline: 0;
+    box-shadow: 0 0 0 0.1rem rgba(247, 247, 252, 0.14)
+}
+
+.user-settings-general textarea{
+ height: 170px !important;
+}
+
+.user-settings-general p{
+  text-align: center;
+  padding-top: 10px;
+ }
+
+ .user-settings-sidebar{
+   padding-top: 20px;
+ }
+
+ .button-save-config{
+  background-color: #682d6f !important;
+  position: absolute;
+  bottom: -10px;
+  color: #fff !important;
+  right: 0px;
+ }
+
+ .gohst-box{
+   height: 50px;
+ }
+
+ #UserSettings .active{
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 21px;
+  padding: 15px 0;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  -webkit-clip-path: polygon(0 0,93% 0,100% 32%,100% 100%,0 100%);
+  clip-path: polygon(0 0,93% 0,100% 32%,100% 100%,0 100%);
+  -webkit-transition: background-color .2s ease-in-out;
+  -o-transition: background-color .2s ease-in-out;
+  transition: background-color .2s ease-in-out;
+  background-color: $gamer-sidebar-label-background;
+  border-radius: 5px;
+ }
+
+ #UserSettings .sub-active{
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 21px;
+  padding: 15px 0;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  -webkit-clip-path: polygon(0 0,93% 0,100% 32%,100% 100%,0 100%);
+  clip-path: polygon(0 0,93% 0,100% 32%,100% 100%,0 100%);
+  -webkit-transition: background-color .2s ease-in-out;
+  -o-transition: background-color .2s ease-in-out;
+  transition: background-color .2s ease-in-out;
+  border-radius: 5px;
+  border-bottom: 3px solid #6b54b6; 
+ }
+
+ #userSettingsPreference a{
+   cursor: pointer;
+   font-family: sans-serif, 'Segoe UI', 'Roboto', 'Oxygen';
+ }
+ 
+#UserSettings .custom-select{
+  background-color: $gamer-form-input-background;
+  border: 1px solid #ffffff0f;
+}
+
+#UserSettings .text-muted{
+  font-size: 12px !important;
+}
+
+#UserSettings .user-settings-general p{
+  font-size: 12px;
+}
+
+#userSettingsGeneral{
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  animation: slide-in 0.2s forwards;
+  -webkit-animation: slide-in 0.2s forwards;
+  visibility: hidden;
+}
+
+#userSettingsSetup{
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  animation: slide-in 0.2s forwards;
+  -webkit-animation: slide-in 0.2s forwards;
+  visibility: hidden;
+}
+
+#userSettingsPreference{
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  animation: slide-in 0.2s forwards;
+  -webkit-animation: slide-in 0.2s forwards;
+  visibility: hidden;
+}
+
+.input-add-preference{
+  position: absolute !important;
+  left: 0 !important;
+  right: 0 !important;
+  top: 0 !important;
+}
+
+#userSettingsPreference .button-save-config{
+  position: absolute;
+  bottom: -110px;
+  right: -20px;
+}
+
+#userSettingsPreference .wizzard-box{
+  padding-top: 80px;
+  padding-bottom: 40px;
+}
+
+
+#userSettingsExperience{
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  animation: slide-in 0.2s forwards;
+  -webkit-animation: slide-in 0.2s forwards;
+  visibility: hidden;
+}
+
+#userSettingsExperience .experience-label{
+  position: absolute;
+  bottom: 0;
+  padding: 3px 25px;
+  background-color: #5f158dd1;
+  cursor: pointer;
+  left: 0;
+  right: auto;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 0;
+}
+
+#userSettingsExperience .btn-add-experience{
+  margin-top: 0px !important;
+  border-top-left-radius: 0 !important;
+  border-top-right-radius: 0;
+  background-color: #0fa25ede !important;
+  color: #fff;
+  width: 100%;
+  margin-top: 0 !important;
+}
+
+.btn-with-loading{
+  position: absolute !important;
+    right: 0 !important;
+    width: 200px !important;
+    height: 50px !important;
+    bottom: -70px !important;
+}
+
+@keyframes slide-in {
+  0%{
+    display: none
+  }
+  50%{
+    visibility: hidden;
+
+  }
+  100% { transform: translateX(0%); 
+  visibility: visible;}
+}
+
+@-webkit-keyframes slide-in {
+  0%{
+    display: none
+  }
+  50%{
+    visibility: hidden;
+
+  }
+  100% { transform: translateX(0%);
+    visibility: visible; }
+}
+
+#UserSettings .box-panel{
+  filter: none !important
+} 
+
+#UserSettings .experience-box{
+  margin-bottom: 2px !important;
+  height: 150px !important;
+}
+
+#userSettingsRelations{
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  animation: slide-in 0.2s forwards;
+  -webkit-animation: slide-in 0.2s forwards;
+  visibility: hidden;
+}
+
+#userSettingsRelations .box-image-rounded-small{
+  width: 70px;
+}
+
+#userSettingsRelations .osahan-post-header{
+  text-align: left;
+}
+
+#userSettingsRelations .box-image-rounded-small .img{
+  width: 50px;
+  height: 50px;
+}
+
+#userSettingsRelations .btn-group button{
+  color: #b056e8 !important;
+  font-family: sans-serif, 'Segoe UI', 'Roboto', 'Oxygen';
+  border: 1px solid;
+  border-radius: 6px;
+  margin: 6px;
+}
+
+#userSettingsRelations .small{
+  font-size: 15px;
+  margin-top: 3px;
+}
+
+
+#userSettingsRelations .text-truncate{
+  color: #fff;
+  font-size: 18px;
+}
+
+#userSettingsRelations .btn-group button:hover {
+  color: #fff !important;
+  background-color: #560c84 !important;
+  font-family: sans-serif, 'Segoe UI', 'Roboto', 'Oxygen';
+  border: none;
+  border-radius: 6px;
+  margin: 7px;
+}
+
+#userSettingsSync img{
+  margin-top: 20px;
+}
+
+#userSettingsSync .input-add-preference{
+  margin-top: 40px;
+}
+
+#userSettingsSync .js-validate{
+  margin-top: -20px;
+  margin-bottom: 20px;
+}
+
+/* ENDLESS ROTATE */
+.rotating{
+  animation: rotate 2s linear infinite; 
+}
+@keyframes rotate{
+  to{ transform: rotate(360deg); }
+}
+
+.btn-error{
+      background-color: #e03939 !important;
+}

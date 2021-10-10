@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700');
+@import url('//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css');
+@import './../../utils/styles.scss';
+
+
+.progressbar {
+    counter-reset: step;
+    margin-top: 200px;
+}
+.progressbar li {
+    list-style-type: none;
+    width: 25%;
+    float: left;
+    font-size: 12px;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    color: #7d7d7d;
+}
+
+.progressbar li:before {
+    width: 50px;
+    height: 50px;
+    content: counter(step);
+    counter-increment: step;
+    line-height: 45px;
+    border: 3px solid #7d7d7d;
+    display: block;
+    text-align: center;
+    font-size: 16px;
+    margin: 0 auto 10px auto;
+    border-radius: 50%;
+    background-color: white;
+}
+
+
+.progressbar li:after {
+    width: 100%;
+    height: 2px;
+    content: '';
+    position: absolute;
+    background-color: #7d7d7d;
+    top: 25px;
+    left: -50%;
+    z-index: -1;
+}
+.progressbar li:first-child:after {
+    content: none;
+}
+.progressbar li.active {
+    color: #9d00ff78;
+
+}
+.progressbar li.active:before {
+    border-color: #9d00ff78;
+}
+.progressbar li.active + li:after {
+    background-color: #9d00ff78;
+}
+
+
+.wizzard-box{
+    padding-top: 120px;
+    padding-left: 50px !important;
+}
+
+.wizzard-box p {
+    font-size: 14px;
+    margin-bottom: 20px !important;
+}
+
+.wizzard-box button {
+    background-color: #9d00ff78;
+    color: #fff;
+    margin-top: 15px !important;
+}
+
+.wizzard-box .form-check-inline{
+    display: flex !important;
+
+}
+
+.wizzard-box .form-check-inline span{
+ margin-right: 20px;
+}
+
+.select-country-form{
+    margin-bottom: 15px;
+}
+
+.wizzard-box .btn-in-form{
+    margin-top: 0px !important;
+    border-top-left-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+    background-color: #0fa25ede;
+
+}
+
+.wizzard-box .tag-delete{
+    background-color: #bf1515 !important;
+    padding: 8px;
+    font-size: 12px;
+    display: inline-block;
+    cursor: pointer;
+    margin-right: 10px;
+    margin-top: 0px !important;
+    margin-bottom: 10px !important;
+}
+
+.wizzard-box .preference-delete{
+    background-color: #560c84 !important;
+    padding: 8px;
+    font-size: 12px;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 20px;
+    margin-right: 10px;
+    margin-top: 0px !important;
+    margin-bottom: 10px !important;
+}
+
+.user-settings-general{
+    background-color: $gaming-box-background !important;
+    width: 100%;
+    margin: 0 0 10px;
+    padding: 24px 33px;
+    font-family: sans-serif, 'Segoe UI', 'Roboto', 'Oxygen';
+    font-size: 15px;
+    font-weight: inherit;
+    line-height: calc(63px - (48px - 2px));
+    color: #c3bace;
+    background-color: #282534 !important;
+    border: none;
+    border-radius: 10px !important;
+    outline: 0;
+    cursor: text;
+    -webkit-appearance: none;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-filter: drop-shadow(0 3px 7px rgba(14, 8, 18, 0.44));
+    filter: drop-shadow(0 3px 7px rgba(14, 8, 18, 0.44));
+    -webkit-transition: .3s cubic-bezier(.21,.04,0,1.07);
+    -o-transition: .3s cubic-bezier(.21,.04,0,1.07);
+    transition: .3s cubic-bezier(.21,.04,0,1.07);
+    z-index: 10;
+  }
+  
+  .wizzard .form-control {
+      display: block;
+      width: 100%;
+      height: calc(1.5em + .75rem + 2px);
+      padding: .375rem .75rem;
+      font-size: 1rem;
+      font-weight: 400;
+      line-height: 1.5;
+      color: #495057;
+      background-clip: padding-box;
+      border: 1px solid #ced4da;
+      border-radius: .25rem;
+      transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  }
+  
+  
+  .wizzard .form-control, .wizzard .custom-select, .wizzard .form-control:hover,  .wizzard .form-control:focus {
+    border-color: #ffffff0f;
+    background-color: #140c1a69;
+    color: #fff;
+  }
+  
+  .wizzard .user-settings-general .form-control:focus {
+      color: #fff;
+      border-color: #ffffff0f;
+      background-color: #140c1a69;
+      outline: 0;
+      box-shadow: 0 0 0 0.1rem rgba(247, 247, 252, 0.14)
+  }
+
+  .wizzard textarea{
+    height: 170px !important;
+   }
+  
+   .wizzard .link-skip{
+    font-size: 14px;
+    color: #0056b3;
+    margin-right: 10px;
+    text-align: left;
+    cursor: pointer;
+   }

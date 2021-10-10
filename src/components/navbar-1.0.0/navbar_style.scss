@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,500,500i,700,700i&display=swap');
+@import '../../utils/styles.scss';
+
+/* Top Nav */
+ .navbar-dark .navbar-nav .nav-link {
+     color: rgba(255,255,255,.8);
+}
+ .osahan-nav-top .container {
+     padding: 0 16px;
+}
+ .osahan-nav-top .img-profile {
+     width: 30px;
+     height: 30px;
+}
+ .osahan-nav-top .osahan-list-dropdown .nav-link i {
+     font-size: 16px;
+}
+
+#navbarDesktop li a{
+    margin-top: 6px;
+    margin-right: 5px;
+}
+
+#navbarDesktop .raf-icon-badge {
+    margin-left: 3px;
+    margin-right: 4px;
+}
+
+#navbarDesktop .dropdown-navbar{
+    padding: 0;
+    padding-left: 12px;
+}
+
+#navbarDesktop .dropdown-submenu{
+    margin-top: -25px;
+}
+
+.dropdown-navbar{
+    background: #282828 !important;
+    border-color: #3e3e3e !important;
+    color: #ffffff !important;
+}
+
+ .osahan-nav-top .osahan-list-dropdown .nav-link .badge {
+     position: absolute;
+     border-radius: 50px;
+     min-width: 15px;
+     height: 15px;
+     font-size: 9px;
+     padding: 0px;
+     right: 1px;
+     line-height: 15px;
+     top: 30px;
+}
+ .osahan-nav-top .nav-link {
+     position: relative;
+     height: 90px;
+     display: flex;
+     align-items: center;
+     font-size: 16px;
+}
+ .osahan-nav-top .navbar-search .form-control {
+    background-color: #140c1a;
+    font-family: Rajdhani,sans-serif, 'Segoe UI', 'Roboto', 'Oxygen';
+    color: #6b54b6;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: .01em;
+    font-weight: 600;
+    padding-left: 37px;
+    padding-right: 74px;
+    -webkit-clip-path: polygon(6% 0,100% 0,100% 100%,0 100%,0 32%);
+    clip-path: polygon(6% 0,100% 0,100% 100%,0 100%,0 32%);
+}
+ .osahan-nav-top .navbar-search .btn {
+    background-color: #140c1a;
+    color: #6b54b6;
+}
+ .dropdown-list .dropdown-item {
+     white-space: normal;
+     padding-top: .5rem;
+     padding-bottom: .5rem;
+     border-left: 1px solid #e3e6f0;
+     border-right: 1px solid #e3e6f0;
+     border-bottom: 1px solid #e3e6f0;
+     line-height: 1.3rem;
+     cursor: pointer;
+}
+
+.dropdown-item{
+    height: 10px !important;
+    margin-top: 20px !important;
+    font-size: 16px !important;
+    cursor: pointer;
+}
+
+.dropdown-item svg{
+    margin-right: 9px !important;
+}
+
+
+ .dropdown-list {
+     padding: 0;
+     border: none;
+     overflow: hidden;
+     width: 20rem!important;
+}
+
+
+.dropdown-menu a{
+    color: #fff !important
+}
+
+ .dropdown-list .dropdown-header {
+     background-color: #161616 !important;
+     border: 1px solid #3e3e3e !important;
+     color: #fff;
+     font-weight: 800;
+     font-size: 14px;
+     padding: .8rem 1rem;
+}
+ .dropdown-list .icon-circle {
+     height: 2.5rem;
+     width: 2.5rem;
+     border-radius: 100%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}
+/* End Top Nav */
+
+/* Mobile Media */
+@media (max-width: 768px) {
+	.osahan-nav-top .dropdown-menu {
+		width: 100% !important;
+	}
+	.osahan-nav-top .nav-item.dropdown {
+		position: unset;
+	}
+	.osahan-line-tab .nav-link {
+		font-size: 13px;
+	}
+	.job-tags .btn {
+		margin: 3px 1px !important;
+	}
+	.profile-right {
+		display: inline-grid;
+	}
+	.profile-right .btn {
+		margin: 2px 0 !important;
+	}
+}
+/* End Mobile Media */
+
+.navbar-icon{
+    max-width: 35px;
+    margin-right: 5px;
+    padding-top: 1px;
+}
+
+.navbar-style{
+    background-color: $gamer-navbar-background !important;
+    width: 100%;
+    margin: 0 0 10px;
+    padding: 24px 33px;
+    font-family: inherit,sans-serif, 'Segoe UI', 'Roboto', 'Oxygen';
+    font-size: 15px;
+    font-weight: inherit;
+    line-height: calc(63px - (48px - 2px));
+    color: #c3bace;
+    border: none;
+    border-radius: 0;
+    outline: 0;
+    cursor: text;
+    -webkit-appearance: none;
+    box-sizing: border-box;
+    filter: drop-shadow(0 3px 7px rgba(14, 8, 18, 0.44));
+    transition: 0.3s cubic-bezier(0.21, 0.04, 0, 1.07);
+    z-index: 99;
+
+}
+
+::-webkit-input-placeholder {
+    color: peachpuff;
+    font-size: 14px;
+  }
+  ::-moz-placeholder {
+    color: peachpuff;
+    font-size: 14px;
+  }
+  :-ms-input-placeholder {
+    color: peachpuff;
+    font-size: 14px;
+  }
+  ::placeholder {
+    color: peachpuff;
+    font-size: 14px;
+  }
+  
+  .nav-link span {
+      margin-left: 5px;
+  }
+
+  .nav-item a {
+    font-size: 16px !important;
+    cursor: pointer;
+}
+
+  .box-image-rounded-small img{
+    object-fit: cover;
+    width:40px;
+    height:40px;
+    margin-bottom: 10px;
+}
+
+.drop-down-profile:hover .dropdown-menu{
+    height: 200px;
+    opacity: 1;
+    transform: translateY(0);
+    visibility: visible !important;
+    display: block !important;
+    background-color: red;
+}
+
+.icon-country-flags{
+    max-width: 20px;
+    margin-right: 5px;
+    margin-top: -3px;
+}
+
+.dropdown-toggle span{
+    margin-top: -7px !important;
+}
+
+.user-status select {
+    background-color: transparent!important;
+    border: none;
+    color: #d3ac2b;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 23px;
+    text-align-last: right;
+    padding-right: 5px;
+}
+
+.navbar-nav select option{
+    background-color: #20132a;
+    border: none;
+}
+
+#notificationBox svg{
+    fill: #fff;
+}
+
+.blobs-container {
+	position: absolute;
+    width: 32px;
+    height: 32px;
+    bottom: 2px;
+    left: 5px;
+}
+
+.blob {
+	background: black;
+	border-radius: 50%;
+	box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
+	margin: 10px;
+	transform: scale(1);
+	animation: pulse-black 2s infinite;
+}
+
+.blob.online {
+	background: rgb(93, 212, 70);
+	box-shadow: 0 0 0 0 rgba(51, 217, 178, 1);
+    animation: pulse-green 2s infinite;
+	height: 10px;
+	width: 10px;
+}
+
+.blob.playing {
+	background: rgb(165, 138, 255);
+	box-shadow: 0 0 0 0 rgb(175, 155, 243);
+    animation: pulse-green 2s infinite;
+	height: 10px;
+    width: 10px;
+    left: -13px !important;
+    position: absolute;
+}
+
+.blob.afk {
+	background: rgb(255, 127, 84);
+	box-shadow: 0 0 0 0 rgb(175, 155, 243);
+    animation: pulse-green 2s infinite;
+	height: 10px;
+    width: 10px;
+    position: absolute;
+    right: -14px;
+}
+
+@keyframes pulse-green {
+	0% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(51, 217, 178, 0.7);
+	}
+	
+	70% {
+		transform: scale(1);
+		box-shadow: 0 0 0 10px rgba(51, 217, 178, 0);
+	}
+	
+	100% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(51, 217, 178, 0);
+	}
+}
